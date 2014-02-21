@@ -1835,7 +1835,7 @@
 
       // loadTour if we are calling startTour directly. (When we call startTour
       // from window onLoad handler, we'll use currTour)
-      if (!currTour) {
+      if (!currTour || tour) {
         currTour = tour;
         loadTour.call(this, tour);
       }
