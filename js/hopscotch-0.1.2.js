@@ -898,7 +898,7 @@
       // Show/hide CTA button
       this._setupCTAButton(step);
 
-      this._setArrow(step.placement);
+      this._setArrow(step.orientation || step.placement);
 
       // Set dimensions
       bubbleWidth   = utils.getPixelValue(step.width) || this.opt.bubbleWidth;
